@@ -8,13 +8,14 @@ import { LucideSunMoon, Search } from 'lucide-react'
 const Header = () => {
   return (
     <main className='h-full w-full flex flex-row justify-center'>
-        <section className='h-full p-4 w-[60%] flex flex-row justify-between items-center'>
+        <section className='h-full p-4 w-[55%] flex flex-row justify-between items-center grayscale hover:grayscale-0'>
             <div className='flex flex-row items-center gap-4'>   
                 <Image 
                 src={'/profile_me.jpg'}
                 alt='logo'
                 width={80}
                 height={80}
+                className='rounded-full'
                 />
 
                 <div className='flex flex-col gap-2'>
