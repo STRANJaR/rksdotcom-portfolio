@@ -5,7 +5,7 @@ import { Separator } from './ui/separator'
 import { Button } from './ui/button'
 
 
-interface ProjectDetails {
+export interface ProjectDetails {
     projectId: number,
     title: string,
     description: string,
@@ -47,7 +47,7 @@ const ProjectCard = ({ projectId, title, description, projectImg, techStack, sta
                     {/* <span>{techStack}</span> */}
                 </div>
 
-                <Link href={`/${slug}`} className='w-full bg-green-1'>
+                <Link href={`/projects/${slug}`} className='w-full bg-green-1 text-center py-2 rounded-sm hover:bg-sky-2 hover:text-dark-1 transition-all'>
                     read more
                 </Link>
             </div>

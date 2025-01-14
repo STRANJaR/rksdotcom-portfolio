@@ -9,7 +9,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <main className='bg-dark-1 flex flex-col gap-6 py-5'>
+    <main className=' flex flex-col gap-6 py-5'>
       <Header />
       <Greeting />
       <TechStack />
