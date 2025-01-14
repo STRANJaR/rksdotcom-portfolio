@@ -8,7 +8,7 @@ import { LucideSunMoon, Search } from 'lucide-react'
 const Header = () => {
   return (
     <main className='h-full w-full flex flex-row justify-center'>
-        <section className='h-full p-4 w-[55%] flex flex-row justify-between items-center grayscale hover:grayscale-0'>
+        <section className='h-full p-4 w-[55%] flex flex-row justify-between items-center grayscale hover:grayscale-0 transition-all'>
             <div className='flex flex-row items-center gap-4'>   
                 <Image 
                 src={'/profile_me.jpg'}
@@ -23,7 +23,7 @@ const Header = () => {
                     <div className='flex flex-row items-center gap-2'>
                         <Link href={'#'} className='text-sm text-green-2 hover:underline'>About</Link>
                         &bull;
-                        <Link href={'#'} className='text-sm text-green-2 hover:underline'>Projects</Link>
+                        <Link href={'/projects'} className='text-sm text-green-2 hover:underline'>Projects</Link>
                         &bull;
                         <Link href={'#'} className='text-sm text-green-2 hover:underline'>Storyline</Link>
                     </div>
@@ -32,8 +32,8 @@ const Header = () => {
             </div>
 
             <div className='flex flex-row items-center gap-4'>
-                <Search className='h-6 w-6 cursor-pointer hover:text-purple-1'/>
-                <LucideSunMoon className='h-6 w-6 cursor-pointer hover:text-purple-1'/>
+                <Search className='h-6 w-6 cursor-pointer hover:text-green-1'/>
+                <LucideSunMoon className='h-6 w-6 cursor-pointer hover:text-green-1'/>
             </div>
         </section>
     </main>
