@@ -9,15 +9,19 @@ import { ProjectDetails } from '@/components/ProjectCard';
 const SingleProject = () => {
 
     const {id} = useParams();
+    console.log(id);  
 
-    const [project, setProject ] = useState<ProjectDetails[]>()
+    const [project, setProject ] = useState([])
+    console.log(project);
+    
 
     useEffect(() => {
         // TODO:
 
-        const newData = projects.filter(project => project.slug !== id)
-        setProject(newData)
-    }, [id])
+        const newData = projects.filter(project => project.slug === id)
+       console.log(newData);
+       setProject(newData)  
+    }, [])
 
   return (
     <main className='h-full w-full flex flex-row justify-center'>

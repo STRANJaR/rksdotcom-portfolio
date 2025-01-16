@@ -16,9 +16,9 @@ const Greeting = () => {
 
             <div className='flex flex-row items-center gap-2 text-sm'>
                 <span>Find me on </span>
-                <Link href={'#'} className=' bg-dark-2 p-2 rounded-full'> <Github className='h-4 w-4'/> </Link>
-                <Link href={'#'} className=' bg-dark-2 p-2 rounded-full'> <Linkedin className='h-4 w-4'/> </Link>
-                <Link href={'#'} className=' bg-dark-2 p-2 rounded-full'> <Twitter className='h-4 w-4'/> </Link>
+                <Link href={'https://github.com/STRANJaR'} target='_blank' className=' bg-sky-1 dark:bg-dark-2 p-2 rounded-full'> <Github className='h-4 w-4'/> </Link>
+                <Link href={'https://www.linkedin.com/in/rohit-shrivastav-dev/'} target='_blank' className=' bg-sky-1 dark:bg-dark-2 p-2 rounded-full'> <Linkedin className='h-4 w-4'/> </Link>
+                <Link href={'https://x.com/rks_dot_com'} target='_blank' className=' bg-sky-1 dark:bg-dark-2 p-2 rounded-full'> <Twitter className='h-4 w-4'/> </Link>
             </div>
         </section>
     </main>

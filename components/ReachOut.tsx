@@ -10,9 +10,9 @@ const ReachOut = () => {
             <h1 className='text-2xl font-bold'>Have any suggestions? Hit the mail!</h1>
 
 
-            <p className='text-sm'>Send me an email at rohitrks805@gmail.com, whatsapp me or just drop your email address below and I will get back to you!</p>
+            <p className='text-sm'>Send me an email at <span className='font-semibold'>rohitrks805@gmail.com</span>, whatsapp me or just drop your email address below and I will get back to you!</p>
             <div className='flex flex-col gap-3'>
-                <Input className='py-4 bg-dark-2' type='email' placeholder='Enter your email'/>
+                <Input className='py-4 bg-sky-1 dark:bg-dark-2' type='email' placeholder='Enter your email'/>
                 <Button 
                 className='w-full h-12 font-bold bg-green-1'
                 >

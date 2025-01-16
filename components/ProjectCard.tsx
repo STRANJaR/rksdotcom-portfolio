@@ -19,7 +19,7 @@ const ProjectCard = ({ projectId, title, description, projectImg, techStack, sta
     return (
         <main>
             <div className='h-full w-full flex flex-col gap-6 px-20 py-10'>
-                <div className='h-72 w-full border border-dashed border-gray-600'>
+                <div className='h-80 w-full border border-dashed border-gray-600'>
                     <Image
                         src={projectImg}
                         alt={title}
