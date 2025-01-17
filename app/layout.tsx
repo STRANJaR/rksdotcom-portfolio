@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ReachOut from "@/components/ReachOut";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  icons: "favicon.ico",
   title: "Home • Rohit Shrivastav",
   description: "Rohit Shrivastav",
 };
@@ -36,7 +38,10 @@ export default function RootLayout({
         enableSystem
         >
         <Header/>
+        <div className="h-16 w-16 bg-purple-1 blur-3xl absolute top-[30%] left-[20%]"></div>
+        {/* <div className="h-16 w-16 bg-blue-1 blur-3xl absolute bottom-[10%] right-[20%]"></div> */}
         {children}
+        <ReachOut/>
         <Footer/>
         </ThemeProvider>
       </body>

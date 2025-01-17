@@ -13,7 +13,7 @@ const Home = () => {
       <TechStack />
       <Experience />
       <Projects />
-      <ReachOut />
+      {/* <ReachOut /> */}
       {/* <Footer /> */}
     </main>
   )

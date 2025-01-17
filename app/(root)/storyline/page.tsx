@@ -7,7 +7,7 @@ const Storyline = () => {
         <section className='h-full w-[50%] flex flex-col gap-4'>
         <h1 className='text-2xl font-bold'>Storyline</h1>
 
-            <div className='w-full flex flex-col justify-center items-center text-sm border border-sky-1'>
+            <div className='w-full flex flex-col p-5 justify-center items-center text-sm  border-l-4 border-green-1 rounded-sm'>
                 <div className='h-auto w-full'>
                     <Image
                     src={'/profile_me.jpg'}
