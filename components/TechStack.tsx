@@ -1,4 +1,12 @@
 import React from 'react'
+import {
+    UIFrameworks,
+    Databases,
+    Frameworks,
+    Platforms,
+    ProgrammingLanguages,
+
+} from '@/constants/constant'
 
 const TechStack = () => {
     return (
@@ -11,31 +19,54 @@ const TechStack = () => {
                 <div className='flex flex-row items-center gap-2 text-sm'>
                     <span className='underline'>Programming Languages</span>
                     <span>:</span>
-                    <span>Typescript, Python, PHP, Ruby, Rust</span>
+                    {ProgrammingLanguages && ProgrammingLanguages.map(lang => (
+                    <span key={lang}>
+                        {lang},
+                    </span>
+                    ))}
                 </div>
 
                 <div className='flex flex-row items-center gap-2 text-sm'>
                     <span className='underline'>Frameworks</span>
                     <span>:</span>
-                    <span>React, NextJS, Laravel, Ruby on Rails</span>
+                    {Frameworks && Frameworks.map(framweork => (
+                    <span key={framweork}>
+                    {framweork},
+                    </span>
+                    ))}
                 </div>
 
                 <div className='flex flex-row items-center gap-2 text-sm'>
                     <span className='underline'>UI Frameworks</span>
                     <span>:</span>
-                    <span>React, VueJS, Astro, NextJS, Tailwind</span>
+                    {UIFrameworks && UIFrameworks.map(framework => (
+
+                    <span key={framework}>
+                        {framework},
+                    </span>
+                    ))}
                 </div>
 
                 <div className='flex flex-row items-center gap-2 text-sm'>
                     <span className='underline'>Database</span>
                     <span>:</span>
-                    <span>Postgres, MySQL, MongoDB, Redis, DragonflyDB</span>
+                    {Databases && Databases.map(db => (
+
+                    <span key={db}>
+                        {db}
+                    </span>
+                    ))}
                 </div>
 
                 <div className='flex flex-row items-center gap-2 text-sm'>
                     <span className='underline'>Platform/Cloud</span>
                     <span>:</span>
-                    <span>Azure, AWS, Kubernetes, Kafka, Terraform, Jenkins, Grafana, Prometheus, Docker</span>
+                    {Platforms && Platforms.map(platform => (
+
+                    <span key={platform}>
+                        {platform},
+                    </span>
+                    ))}
                 </div>
 
             </section>
